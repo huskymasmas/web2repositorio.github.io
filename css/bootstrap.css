@@ -11819,11 +11819,17 @@ body {
 }
 .contenedor{
 
-  
+
   display: flex;
 }
 .margenes{
-
+  border-radius: 10%;
+  border: 1px solid black;
   margin: 10px;
 }
 
+.botontraspa{
+   float: center;
+  background: transparent;
+
+}
