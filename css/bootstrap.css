@@ -11845,16 +11845,17 @@ body {
 
   margin-top: 80px ;
   margin-left:  80px;
-
-
+  width: 500px;
+  padding: 20px;
+   letter-spacing: 2px ;
 
 
 
 }
 .botonañadircarito{
 
-  margin-top: -150px ;
-  margin-left:  750px;
+  margin-top: -500px ;
+  margin-left:  600px;
 
 
 }

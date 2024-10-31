@@ -1,16 +1,18 @@
 
 
-    var nombre  = document.getElementById("nombre");
+const  nombre  = document.getElementById("nombre");
 
 
 
 
-    function producto( nombredeproducto ){
+    function producto( nombredelproducto  , descripcion , imagen ){
+       
+        localStorage.setItem("nombreDelProducto", nombredelproducto);
+        localStorage.setItem("descripcion", descripcion);
+        localStorage.setItem("imagen", imagen);
+        window.location.href = 'comprar.html';
 
-    document.write(nombredeproducto);
 
-
+   
 
     }
-
-    nombre.addEventListener('click',producto,true);

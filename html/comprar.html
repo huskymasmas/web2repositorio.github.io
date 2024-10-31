@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>compra</title>
     <link rel="stylesheet" href="/css/bootstrap.css"> 
-
+   
 </head>
 <body>
 
@@ -19,7 +19,7 @@
               <div class="collapse navbar-collapse" id="navbarColor03">
                 <ul class="navbar-nav me-auto">
                   <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home
+                    <a class="nav-link active" href="/html/index.html">Home
                       <span class="visually-hidden">(current)</span>
                     </a>
                   </li>
@@ -45,13 +45,13 @@
 
 
     <section class = "imagen_producto">
-
-
-        <h2>nombre del producto</h2>
-        <img  width="300" height="200" src = "/imagenes/juego1.JPG">
+     <option value="juego">juego</option>
+     <a id="gameLink" href="http://localhost:3000/html/comprar.html" target="_blank">Ver juego</a>
+        <h2 id = "nombre">nombre del producto</h2>
+        <img   id = "imagen" width="400" height="400" src = "">
         <br>
         <br>
-        <p>descripcion del producto</p>
+        <p id = "descripcion">descripcion del producto</p>
 
 
 
@@ -61,8 +61,8 @@
     <aside>
     <div class = "botonañadircarito">
 
-        <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">añadir al carrito</button>
-   
+        <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" onclick="añadircarito()">añadir al carrito</button>
+        <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" onclick="ver()">ver carrito</button>
 
     <div class="container mt-4">
         <div class="form-group">
@@ -79,7 +79,7 @@
 
     </div>
 </aside>
-
-
+<script src = "/js/compra.js"></script>
+<script src = "/js/guardardatos.js"></script>
 </body>
 </html>
