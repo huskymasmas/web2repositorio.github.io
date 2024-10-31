@@ -11794,7 +11794,7 @@ body {
 
   box-sizing: content-box;
   position: relative;
-  height: 95vh;
+  height: 100vh;
   font-family: 'Times New Roman', Times, serif;
   background-image:  url(/imagenes/plantilla-logotipo-tema-tienda-videojuegos.jpg);
   background-image:  url(/imagenes/plantilla-logotipo-tema-tienda-videojuegos.jpg);
@@ -11810,7 +11810,7 @@ body {
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1rem;
-
+  margin-left: 1px;
   font-weight: 400;
   line-height: 2.5;
   color:black;
@@ -11819,17 +11819,23 @@ body {
 }
 .contenedor{
 
-
   display: flex;
 }
 .margenes{
-  border-radius: 10%;
-  border: 1px solid black;
+
   margin: 10px;
 }
 
 .botontraspa{
-   float: center;
+  border-radius: 10%;
+  border: 1px solid black;
   background: transparent;
+  cursor: pointer;
+  transition: background-color .4s ease;
+
+}
+.botontraspa:hover{
+
+  background-color: gray;
 
 }
