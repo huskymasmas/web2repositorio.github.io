@@ -1,5 +1,8 @@
 class datos{
-    numero = []
+
+    nombrespro = [];
+    numero = [];
+  
    
     static dats = new datos();
 

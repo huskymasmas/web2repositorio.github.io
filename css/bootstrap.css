@@ -11827,8 +11827,7 @@ body {
 }
 
 .botontraspa{
-  border-radius: 10%;
-  border: 1px solid black;
+
   background: transparent;
   cursor: pointer;
   transition: background-color .4s ease;
