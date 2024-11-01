@@ -37,9 +37,16 @@ window.onload = function() {
 
 };
 //
-
+var oferta;
 function añadircarito(){
     
+    var selecioncantidad = document.getElementById("comboBox");
+
+    var cantidadvalue = selecioncantidad.value;
+    var cantidad = selecioncantidad.options[selecioncantidad.selectedIndex].text;
+
+    cantidad = parseInt(cantidad);
+
         var seguir = [];
         seguir.push(sessionStorage.getItem("nombre_producto"));
         seguir.push(nombre_producto);
@@ -48,19 +55,10 @@ function añadircarito(){
 
         var seguir = [];
         seguir.push(sessionStorage.getItem("numero"));
-        seguir.push(1);
+        seguir.push(cantidad);
 
         sessionStorage.setItem("numero" , seguir);
 
 
 }
 
-
-function cargarDatos() {
-    var numero = sessionStorage.getItem("numero");
-
-    if (numero) {
-        document.getElementById("numero").value = numero;
- 
-    }
-}
