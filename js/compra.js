@@ -21,7 +21,7 @@ function creardatos(){
 
 
    
-    const nuevaUrl = `/html/comprar.html/${nombre_producto}`;
+    const nuevaUrl = `comprar.html/${nombre_producto}`;
     window.history.pushState({ nombre_producto: nombre_producto }, '', nuevaUrl);
     
  

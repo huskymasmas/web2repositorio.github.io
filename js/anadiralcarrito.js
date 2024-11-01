@@ -29,8 +29,18 @@ function ver(){
 
 
 var totale  = total(arrapres , arracontador);
+if(totale > 100){
 
-console.log("La total es " + totale );
+    var porsentaje =  totale * 0.2;
+    console.log("descuento " + "20%" );
+    var oferta = totale - porsentaje;
+    console.log("La total es " + oferta );
+}else{
+
+    console.log("La total es " + totale );
+
+}
+
 
 function total(ara1 , ara2){
     let total = 0;

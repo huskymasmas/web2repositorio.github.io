@@ -11874,3 +11874,12 @@ table{
     float: left;
     margin-left:  65px;
 }
+
+.totalydescuento{
+  text-align: left;
+  margin: 5px auto;
+  width: 600px;
+  background-color: whitesmoke;
+  margin-left:  70px;
+  margin-top: -5px ;
+}
