@@ -16,7 +16,7 @@ function creardatos(){
     var descripcion_producto = localStorage.getItem("descripcion");
     var imagen_producto = localStorage.getItem("imagen");
     
-    
+
     imagen.src = imagen_producto;
     descripcion.textContent = descripcion_producto;
     nombre.textContent  = nombre_producto;
@@ -35,7 +35,7 @@ creardatos();
 //
 window.onload = function() {
     const pathname = window.location.pathname;
-    const partes = pathname.split('?'); 
+    const partes = pathname.split('/'); 
     const nombreArticulo = partes[partes.length - 1]; 
 
 
