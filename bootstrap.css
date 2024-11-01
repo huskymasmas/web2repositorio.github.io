@@ -11803,7 +11803,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #fff;
-
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
 }
 
 .body {
@@ -11823,16 +11824,21 @@ body {
 }
 .margenes{
 
-  margin: 10px;
+  margin: 2px;
 }
-
 .botontraspa{
 
   background: transparent;
+  margin-left:  35px;
+  margin-top: 20px ;
   cursor: pointer;
-  transition: background-color .4s ease;
-
+  transition: background-color .2s ease;
+  border: none;
+  -webkit-box-shadow: 10px 4px 89px -45px rgba(0,0,0,0.73);
+  -moz-box-shadow: 10px 4px 89px -45px rgba(0,0,0,0.73);
+  box-shadow: 10px 4px 89px -45px rgba(0,0,0,0.73);
 }
+
 .botontraspa:hover{
 
   background-color: gray;
@@ -11847,7 +11853,6 @@ body {
   width: 500px;
   padding: 20px;
    letter-spacing: 2px ;
-   font-family: "Source Sans Pro", sans-serif;
 
 
 
