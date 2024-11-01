@@ -24,7 +24,9 @@ function creardatos(){
     const nuevaUrl = `comprar.html/${nombre_producto}`;
     window.history.pushState({ nombre_producto: nombre_producto }, '', nuevaUrl);
     
- 
+    const params = new URLSearchParams(window.location.search);
+    const producto = params.get("producto");
+    
 }
 
 creardatos();
@@ -33,7 +35,7 @@ creardatos();
 //
 window.onload = function() {
     const pathname = window.location.pathname;
-    const partes = pathname.split('/'); 
+    const partes = pathname.split('?'); 
     const nombreArticulo = partes[partes.length - 1]; 
 
 
@@ -66,6 +68,7 @@ function añadircarito(){
         seguir2.push(precio_producto);
 
         sessionStorage.setItem("precio" , seguir2);
+        alert("nuevo producto añadido");
 
 }
 

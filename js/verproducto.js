@@ -11,7 +11,7 @@ const  nombre  = document.getElementById("nombre");
         localStorage.setItem("descripcion", descripcion);
         localStorage.setItem("imagen", imagen);
         localStorage.setItem("precio", precio);
-        window.location.href = 'comprar.html';
+        window.location.href = 'https://huskymasmas.github.io/web2repositorio.github.io/comprar.html';
 
 
    
