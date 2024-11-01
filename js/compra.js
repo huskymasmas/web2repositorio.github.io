@@ -7,26 +7,26 @@ var imagen = document.getElementById("imagen");
 
 var precio = document.getElementById("precio");
 
-var nombre_producto = localStorage.getItem("nombreDelProducto");
-var precio_producto = localStorage.getItem("precio");
-var descripcion_producto = localStorage.getItem("descripcion");
-var imagen_producto = localStorage.getItem("imagen");
 
-
-imagen.src = imagen_producto;
-descripcion.textContent = descripcion_producto;
-nombre.textContent  = nombre_producto;
-precio.textContent = precio_producto + "$";
 function creardatos(){
 
 
-   
+    var nombre_producto = localStorage.getItem("nombreDelProducto");
+    var precio_producto = localStorage.getItem("precio");
+    var descripcion_producto = localStorage.getItem("descripcion");
+    var imagen_producto = localStorage.getItem("imagen");
+    
+    
+    imagen.src = imagen_producto;
+    descripcion.textContent = descripcion_producto;
+    nombre.textContent  = nombre_producto;
+    precio.textContent = precio_producto + "$";
     const nuevaUrl = `comprar.html/${nombre_producto}`;
     window.history.pushState({ nombre_producto: nombre_producto }, '', nuevaUrl);
     
     const params = new URLSearchParams(window.location.search);
     const producto = params.get("producto");
-    
+
 }
 
 creardatos();
@@ -75,5 +75,5 @@ function añadircarito(){
 function iniciaresena(){
 
 
-    window.location.href = 'https://huskymasmas.github.io/web2repositorio.github.io/carrito.html';
+    window.location.href = 'https://huskymasmas.github.io/web2repositorio.github.io?carrito.html';
 }
