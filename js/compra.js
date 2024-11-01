@@ -72,5 +72,5 @@ function añadircarito(){
 function iniciaresena(){
 
 
-    window.location.href = 'carrito.html';
+    window.location.href = 'https://huskymasmas.github.io/web2repositorio.github.io/carrito.html';
 }
