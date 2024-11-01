@@ -11847,6 +11847,7 @@ body {
   width: 500px;
   padding: 20px;
    letter-spacing: 2px ;
+   font-family: "Source Sans Pro", sans-serif;
 
 
 
@@ -11860,6 +11861,16 @@ body {
 }
 aside{
 
-   float: left;
+  float: left;
 
+}
+
+table{
+  margin: 150px auto;
+  width: 600px;
+  border-collapse: collapse;
+    text-align: left;
+    background-color: whitesmoke;
+    float: left;
+    margin-left:  65px;
 }

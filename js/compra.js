@@ -3,18 +3,20 @@ var nombre = document.getElementById("nombre");
 
 var descripcion = document.getElementById("descripcion");
 
-var imagen = document.getElementById("imagen")
+var imagen = document.getElementById("imagen");
 
+var precio = document.getElementById("precio");
 
 var nombre_producto = localStorage.getItem("nombreDelProducto");
-
+var precio_producto = localStorage.getItem("precio");
 var descripcion_producto = localStorage.getItem("descripcion");
-var imagen_producto = localStorage.getItem("imagen")
+var imagen_producto = localStorage.getItem("imagen");
+
 
 imagen.src = imagen_producto;
 descripcion.textContent = descripcion_producto;
 nombre.textContent  = nombre_producto;
-
+precio.textContent = precio_producto + "$";
 function creardatos(){
 
 
@@ -53,12 +55,22 @@ function añadircarito(){
 
         sessionStorage.setItem("nombre_producto" , seguir);
 
-        var seguir = [];
-        seguir.push(sessionStorage.getItem("numero"));
-        seguir.push(cantidad);
+        var seguir1 = [];
+        seguir1.push(sessionStorage.getItem("numero"));
+        seguir1.push(cantidad);
 
-        sessionStorage.setItem("numero" , seguir);
+        sessionStorage.setItem("numero" , seguir1);
 
+        var seguir2 = [];
+        seguir2.push(sessionStorage.getItem("precio"));
+        seguir2.push(precio_producto);
+
+        sessionStorage.setItem("precio" , seguir2);
 
 }
 
+function iniciaresena(){
+
+
+    window.location.href = '/html/carrito.html';
+}
