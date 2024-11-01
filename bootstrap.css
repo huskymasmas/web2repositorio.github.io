@@ -11796,8 +11796,8 @@ body {
   position: relative;
   height: 100vh;
   font-family: 'Times New Roman', Times, serif;
-  background-image:  url(/imagenes/plantilla-logotipo-tema-tienda-videojuegos.jpg);
-  background-image:  url(/imagenes/plantilla-logotipo-tema-tienda-videojuegos.jpg);
+  background-image:  url(imagenes/plantilla-logotipo-tema-tienda-videojuegos.jpg);
+  background-image:  url(imagenes/plantilla-logotipo-tema-tienda-videojuegos.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
