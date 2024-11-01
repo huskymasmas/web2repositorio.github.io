@@ -72,5 +72,5 @@ function añadircarito(){
 function iniciaresena(){
 
 
-    window.location.href = '/html/carrito.html';
+    window.location.href = 'carrito.html';
 }
