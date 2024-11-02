@@ -32,12 +32,12 @@ var totale  = total(arrapres , arracontador);
 if(totale > 100){
 
     var porsentaje =  totale * 0.2;
-    console.log("descuento " + "20%" );
+    console.log("descuento: " + "20%" );
     var oferta = totale - porsentaje;
-    console.log("La total es " + oferta );
+    console.log("La total es: " + oferta );
 }else{
 
-    console.log("La total es " + totale );
+    console.log("La total es: " + totale );
 
 }
 

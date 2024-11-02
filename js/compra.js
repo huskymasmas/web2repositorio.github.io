@@ -5,7 +5,7 @@ if(num == NaN || num ==null){
     var numero = window.location.hash.replace('#comprar.html#' , "");
 
     numero = parseInt(numero);
-    console.log(typeof(numero));
+
     num = numero
 }
 
@@ -36,11 +36,11 @@ var precio = document.getElementById("precio");
         
  
     
-    console.log('Imagen:', imagen_producto);
+
     
     })
     .catch(function(error) {
-    console.error('Error al cargar el JSON:', error);
+    console.error('error', error);
     });
 
 
@@ -97,7 +97,7 @@ function añadircarito(){
         
         })
         .catch(function(error) {
-        console.error('Error al cargar el JSON:', error);
+        console.error('error', error);
         });
         
 }
