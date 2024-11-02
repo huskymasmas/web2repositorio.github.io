@@ -1,0 +1,57 @@
+
+[
+
+  
+  {
+  
+    "nombres" : "Super Smash Bros Ultimate",
+    "descripcion" : "Igual que sus predecesores, se trata de un juego de lucha donde hay que debilitar a los rivales para expulsarles de los márgenes del escenario. El plantel está formado por personajes de otros videojuegos, tanto de Nintendo como de otras desarrolladoras independientes, e incluye a todos los combatientes de entregas anteriores. Además, puede ampliarse con la compra de contenido descargable.",
+    "imgaen": "imagenes/smash.jpeg",
+    "precio": 60
+
+  },
+
+  {
+
+    "nombres" : "Sonic x Shadow Generations",
+    "descripcion" : "El juego Sonic x Shadow Generations es un paquete imperdible para los fans del erizo azul y compañía, ya que ofrece una colección con dos grandes títulos: una versión mejorada y más completa del juego que se lanzó para la celebración del 20 aniversario de Sonic, y una nueva aventura emocionante y desafiante protagonizada por Shadow que complementa la aventura con su gameplay frenético y control sólido en escenarios diseñados con maestría.",
+    "imgaen": "imagenes/juego1.jpeg",
+    "precio": 50
+
+
+
+  },
+
+  {
+
+    "nombres" : "Super Mario Wonder",
+    "descripcion" : "Super Mario Bros Wonder es un videojuego de plataformas de desplazamiento lateral. Como uno de los ocho personajes del jugador Mario, Luigi, Princesa Peach, Princesa Daisy, los Toad amarillo y azul, Toadette, 4 Yoshi el habitual verde, rojo, azul claro y amarillo y Caco Gazapo, el jugador completa niveles en todo el Reino Flor con la ayuda de sus habitantes con forma de flores llamados Poplins.",
+    "imgaen": "imagenes/Super-Mario-Wonder-boxart.jpg",
+    "precio": 60
+
+
+
+  },
+  {
+    "nombres" : "Call of Duty Modern Warfare 3",
+    "descripcion" : "Modern Warfare III Cuenta con una jugabilidad similar a Modern Warfare II y otros juegos de la serie Call of Duty. Las mecánicas que regresaron en Modern Warfare III incluyen el slide cancel. Según Activision, además de las misiones lineales, la campaña del juego cuenta con Misiones de combate abiertas, lo que permitirá a los jugadores elegir libremente cómo quieren abordar sus objetivos y al mismo tiempo poder usar rachas de puntos del modo multijugador en estas mismas.",
+    "imgaen": "imagenes/call of duty.jpeg",
+    "precio": 70
+
+
+  },
+  {
+    "nombres" : "Diablo IV",
+    "descripcion" : "Modern Warfare III Cuenta con una jugabilidad similar a Modern Warfare II y otros juegos de la serie Call of Duty. Las mecánicas que regresaron en Modern Warfare III incluyen el slide cancel. Según Activision, además de las misiones lineales, la campaña del juego cuenta con Misiones de combate abiertas, lo que permitirá a los jugadores elegir libremente cómo quieren abordar sus objetivos y al mismo tiempo poder usar rachas de puntos del modo multijugador en estas mismas.",
+    "imgaen": "imagenes/Diablo-IV-Xbox-510x638.webp",
+    "precio": 70
+  },
+  {
+
+    "nombres" : "ASTRO BOT Rescue Mission",
+    "descripcion" : "Astro Bot Rescue Mission es un juego de plataformas en 3D en el que el jugador toma el control de Astro Bot, un pequeño robot que usa el DualShock 4. Astro puede saltar, flotar, golpear y cargar su golpe en un ataque giratorio. El juego está en VR; una de las particularidades es que la cámara está controlada por los movimientos de la cabeza del jugador en lugar del joystick analógico derecho. Como jugador de realidad virtual.",
+    "imgaen": "imagenes/ASTRO-BOT-Rescue-Mission-PS5-510x638.jpg",
+    "precio": 50
+
+  }
+]

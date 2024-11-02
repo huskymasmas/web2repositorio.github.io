@@ -1,45 +1,52 @@
+var num = localStorage.getItem("espacio");
 
-var nombre = document.getElementById("nombre");
+if(num == NaN || num ==null){
+    console.log( window.location.hash);
+    var numero = window.location.hash.replace('#comprar.html#' , "");
 
-var descripcion = document.getElementById("descripcion");
-
-var imagen = document.getElementById("imagen");
-
-var precio = document.getElementById("precio");
-
-var nombre_producto = localStorage.getItem("nombreDelProducto");
-var precio_producto = localStorage.getItem("precio");
-var descripcion_producto = localStorage.getItem("descripcion");
-var imagen_producto = localStorage.getItem("imagen");
-
-function creardatos(){
-
-
-
-
-    imagen.src = imagen_producto;
-    descripcion.textContent = descripcion_producto;
-    nombre.textContent  = nombre_producto;
-    precio.textContent = precio_producto + "$";
-    const nuevaUrl = `comprar.html/${nombre_producto}`;
-    window.history.pushState({ nombre_producto: nombre_producto }, '', nuevaUrl);
-    
-    const params = new URLSearchParams(window.location.search);
-    const producto = params.get("producto");
-
+    numero = parseInt(numero);
+    console.log(typeof(numero));
+    num = numero
 }
 
-creardatos();
+var nombre = document.getElementById("nombre");
+var descripcion = document.getElementById("descripcion");
+var imagen = document.getElementById("imagen");
+var precio = document.getElementById("precio");
+
+    fetch('js/json.json')
+    .then(function (rs) {
+    return rs.json();
+    })
+    .then(function(data){
+    const nuevaUrl = `comprar.html#${num}`;
+
+    window.location.hash = nuevaUrl;
+
+    var producto = data[num];
+    var nombre_producto = producto.nombres;
+    var descripcion_producto = producto.descripcion;
+    var imagen_producto = producto.imgaen; 
+    var precio_producto = producto.precio;
+
+    nombre.innerText = nombre_producto;
+    descripcion.innerText = descripcion_producto;
+    imagen.src = imagen_producto; 
+    precio.innerText = precio_producto + "$";
+        
+ 
+    
+    console.log('Imagen:', imagen_producto);
+    
+    })
+    .catch(function(error) {
+    console.error('Error al cargar el JSON:', error);
+    });
+
 
 
 //
-window.onload = function() {
-    const pathname = window.location.pathname;
-    const partes = pathname.split('/'); 
-    const nombreArticulo = partes[partes.length - 1]; 
 
-
-};
 //
 var oferta;
 function añadircarito(){
@@ -51,25 +58,48 @@ function añadircarito(){
 
     cantidad = parseInt(cantidad);
 
-        var seguir = [];
-        seguir.push(sessionStorage.getItem("nombre_producto"));
-        seguir.push(nombre_producto);
-
-        sessionStorage.setItem("nombre_producto" , seguir);
-
+       
         var seguir1 = [];
         seguir1.push(sessionStorage.getItem("numero"));
         seguir1.push(cantidad);
 
         sessionStorage.setItem("numero" , seguir1);
 
+       
+
+   
+        alert("nuevo producto añadido");
+
+
+        fetch('js/json.json')
+        .then(function (rs) {
+        return rs.json();
+        })
+        .then(function(data){
+    
+        var producto = data[num];
+        var nombre_producto = producto.nombres;
+        var descripcion_producto = producto.descripcion;
+        var imagen_producto = producto.imgaen; 
+        var precio_producto = producto.precio;
+    
         var seguir2 = [];
         seguir2.push(sessionStorage.getItem("precio"));
         seguir2.push(precio_producto);
-
         sessionStorage.setItem("precio" , seguir2);
-        alert("nuevo producto añadido");
+        
+        var seguir = [];
+        seguir.push(sessionStorage.getItem("nombre_producto"));
+        seguir.push(nombre_producto);
 
+        sessionStorage.setItem("nombre_producto" , seguir);
+
+        
+        })
+        .catch(function(error) {
+        console.error('Error al cargar el JSON:', error);
+        });
+        
 }
 
 function iniciaresena(){
