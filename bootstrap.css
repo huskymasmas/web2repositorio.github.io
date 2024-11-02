@@ -11870,7 +11870,7 @@ aside{
 
 }
 
-table{
+.tables{
   margin: 150px auto;
   width: 600px;
   border-collapse: collapse;
@@ -11882,9 +11882,16 @@ table{
 
 .totalydescuento{
   text-align: left;
-  margin: 5px auto;
-  width: 600px;
+  margin: 0.3125em auto;
+  width: 37.5em;
   background-color: whitesmoke;
-  margin-left:  70px;
-  margin-top: -5px ;
+  margin-left:  4.375em;
+  margin-top: -0.3125em ;
+}
+.listaenvio{
+  text-align: left;
+  margin: 5em auto;
+  margin-left:  54.125em;
+
+
 }
