@@ -7,15 +7,15 @@ var imagen = document.getElementById("imagen");
 
 var precio = document.getElementById("precio");
 
+var nombre_producto = localStorage.getItem("nombreDelProducto");
+var precio_producto = localStorage.getItem("precio");
+var descripcion_producto = localStorage.getItem("descripcion");
+var imagen_producto = localStorage.getItem("imagen");
 
 function creardatos(){
 
 
-    var nombre_producto = localStorage.getItem("nombreDelProducto");
-    var precio_producto = localStorage.getItem("precio");
-    var descripcion_producto = localStorage.getItem("descripcion");
-    var imagen_producto = localStorage.getItem("imagen");
-    
+
 
     imagen.src = imagen_producto;
     descripcion.textContent = descripcion_producto;
@@ -75,5 +75,5 @@ function añadircarito(){
 function iniciaresena(){
 
 
-    window.location.href = 'https://huskymasmas.github.io/web2repositorio.github.io?carrito.html';
+    window.location.href = 'https://huskymasmas.github.io/web2repositorio.github.io/carrito.html';
 }
