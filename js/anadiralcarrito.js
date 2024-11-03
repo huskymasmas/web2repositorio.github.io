@@ -1,4 +1,4 @@
-export class verproductos{
+ class verproductos{
    constructor(){
     this.columna = document.getElementById("producto");
     this.str1 = sessionStorage.getItem("nombre_producto");
@@ -32,18 +32,25 @@ export class verproductos{
 }
 
 calcular(){
+    var descuento = document.getElementById("descuento");
+    var total = document.getElementById("totala");
     var totale  = this.total(this.arrapres , this.arracontador);
     if(totale > 100){
     
+      
         var porsentaje =  totale * 0.2;
+        descuento.innerHTML = "20%"
         console.log("descuento: " + "20%" );
         var oferta = totale - porsentaje;
+        total.innerHTML = oferta;
+
         console.log("La total es: " + oferta );
-        localStorage.setItem("total",oferta);
+        sessionStorage.setItem("total",oferta);
     }else{
-    
+        descuento.innerHTML = "0%"
         console.log("La total es: " + totale );
-        localStorage.setItem("total",totale);
+        total.innerHTML = totale;
+        sessionStorage.setItem("total",totale);
     }
 
 
@@ -64,14 +71,23 @@ calcular(){
 
 
   }
- suma(n1 , n2 ){
+    suma(n1 , n2 ){
         
     return n1 + n2 ;
 
 
-  }
+    }
+
+
+
+
 }
 
 verproductos = new verproductos();
 verproductos.ver();
 verproductos.calcular();
+
+function cambiaresena(){
+
+    window.location.href ="https://huskymasmas.github.io/web2repositorio.github.io/envio.html";
+  }
