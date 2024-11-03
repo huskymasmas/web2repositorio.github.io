@@ -14,7 +14,7 @@ var descripcion = document.getElementById("descripcion");
 var imagen = document.getElementById("imagen");
 var precio = document.getElementById("precio");
 
-    fetch('js/inventario.json')
+    fetch('js/invetario.json')
     .then(function (rs) {
     return rs.json();
     })
@@ -71,7 +71,7 @@ function añadircarito(){
         alert("nuevo producto añadido");
 
 
-        fetch('js/inventario.json')
+        fetch('js/invetario.json')
         .then(function (rs) {
         return rs.json();
         })
