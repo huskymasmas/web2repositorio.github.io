@@ -56,6 +56,8 @@ function ralisarorden(){
 
    var gmail = document.getElementById("gmail").value;
    var direcion = document.getElementById("direccion").value;
+   var nit = document.getElementById("nit").value;
+   var nombre = document.getElementById("nombre").value;
    if(notificaciones.checked){
 
     mesajenoti = "okey resivira notificaciones";
@@ -71,7 +73,7 @@ function ralisarorden(){
    var arrapres = str3.split(',').map(pres => parseFloat(pres)).filter(num => !isNaN(num));
    var  arranombre = str1.split(',').filter(nom => nom != "");
 
-                        alert("datos de compra "+" correo " + gmail+ " direccion " + direcion +" opcional " + mesajenoti+ " nombre de productos: "+ arranombre
+                        alert("datos de compra "+"nombre y apellido"+nombre+"nit"+nit+" correo " + gmail+ " direccion " + direcion +" opcional " + mesajenoti+ " nombre de productos: "+ arranombre
                         + " preciodeproductos: " + arrapres +" cantidad de cada producto: "+ arracontador + " total a pagar: " + total);
 
 
