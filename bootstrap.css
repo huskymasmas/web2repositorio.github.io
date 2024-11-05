@@ -11808,25 +11808,24 @@ body {
 }
 
 .body {
-  margin: 0;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 1rem;
-  margin-left: 1px;
-  font-weight: 400;
-  line-height: 2.5;
-  color:black;
-  text-align: left;
-  background-color: whitesmoke;
+  background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    color: #333;
+  
+    header .navbar-brand {
+      font-weight: bold;
+      color: #333;
+      
+  }
   .carrito-section {
     margin: 2rem auto;
     max-width: 800px;
-    padding: 1rem;
+    padding: 2rem;
     background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-  }
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
+
 .contenedor{
 
   display: flex;
@@ -11879,21 +11878,15 @@ aside{
 
 }
 
-.tables{
-  margin: 150px auto;
+.table{
   width: 100%;
-  margin-bottom: 1rem;
-  border-collapse: separate;
-  border-spacing: 0;
-  border: 1px solid #dee2e6;
-    text-align: left;
-    background-color: #007bff;
-    color: #fff;
-    float: left;
-    margin-left:  75px;
-    padding: 0.75rem;
-    vertical-align: middle;
+    margin-bottom: 1.5rem;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
 }
+
 
 .totalydescuento{
   text-align: left;
