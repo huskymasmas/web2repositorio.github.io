@@ -3,126 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>envio</title>
-    <link rel="stylesheet" href="bootstrap.css"> 
- 
+    <title>Formulario de Envío - Game Store</title>
+    <link rel="stylesheet" href="bootstrap.css">
 </head>
 <body>
 
-    <header>
-
-        <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">GAME STORE</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+<header>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">GAME STORE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarColor03">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor03">
                 <ul class="navbar-nav me-auto">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="https://huskymasmas.github.io/web2repositorio.github.io">Home
-                      <span class="visually-hidden">(current)</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">instagram</a>
-                  </li>
-              
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://huskymasmas.github.io/web2repositorio.github.io/contactos.html">contactos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://huskymasmas.github.io/web2repositorio.github.io/carrito.html">carrito</a>
-                  </li>
-                 
-                    </div>
-                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://huskymasmas.github.io/web2repositorio.github.io">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Instagram</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://huskymasmas.github.io/web2repositorio.github.io/contactos.html">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://huskymasmas.github.io/web2repositorio.github.io/carrito.html">Carrito</a>
+                    </li>
                 </ul>
-              </div>
             </div>
-          </nav>
+        </div>
+    </nav>
+</header>
 
-    </header>
-    <section>
-
+<section>
+    <form action="https://formsubmit.co/bdelacruzs@miumg.edu.gt" method="POST">
         <div class="form-group">
-            <label for=""></label>
-            <form action="https://formsubmit.co/bdelacruzs@miumg.edu.gt" method="POST"></form>
-            <input type="text" class="form-control" name="" id="gmail" aria-describedby="helpId" placeholder="">ingresar email</div>
-            <input type="text" class="form-control" name="" id="nombre" aria-describedby="helpId" placeholder="">ingresar nombre y apellido</div>
-            <input type="text" class="form-control" name="" id="nit" aria-describedby="helpId" placeholder="">ingresar nit</div>
-            <input type="text" class="form-control" name="" id="direccion" aria-describedby="helpId" placeholder="">ingresar direccion</div>
-            
-           <div class="form-check">
-            <label class="form-check-label">
-               <input type="radio" class="form-check-input" name="entrega" id="entrega economic"  onclick="entrega()">
-               entrega economica 5$
-             </label>
-             <br>
-
-             <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="entrega" id="entrega rapida"  onclick="entrega2()" checked>
-                entrega rapida 10$
-              </label>
+            <label for="email">Ingresar email</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="example@domain.com" required>
+        </div>
         
-              <br>
+        <div class="form-group">
+            <label for="nombre">Ingresar nombre y apellido</label>
+            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre Apellido" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="nit">Ingresar NIT</label>
+            <input type="text" class="form-control" name="nit" id="nit" placeholder="NIT" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="direccion">Ingresar dirección</label>
+            <input type="text" class="form-control" name="direccion" id="direccion" placeholder="Dirección" required>
+        </div>
+
+        <div class="form-check">
             <label class="form-check-label">
-              <input type="checkbox" class="form-check-input" name="" id="notificaciones" value="checkedValue" >
-              deseas resivir notificaciones
+                <input type="radio" class="form-check-input" name="entrega" value="economica" id="entrega_economica" checked>
+                Entrega económica $5
+            </label><br>
+
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="entrega" value="rapida" id="entrega_rapida">
+                Entrega rápida $10
             </label>
-             <br>
-          <button class="botontraspa" id = "ver-productos-btn" onclick="realizarorden()">enviar envio</button>
-          <input type="hidden"name="_next" value=""
-          </div>
-         
+        </div>
+        
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" name="notificaciones" id="notificaciones">
+                Deseas recibir notificaciones
+            </label>
+        </div>
+        
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" name="correo_ofertas" id="correo_ofertas">
+                Recibir correos electrónicos con ofertas y novedades
+            </label>
+        </div>
 
-    </section>
- 
+        <button type="submit" class="btn btn-primary mt-3">Enviar Envío</button>
+        <input type="hidden" name="_next" value="">
+    </form>
+</section>
 
+<aside class="listaenvio mt-4">
+    <table class="table table-striped table-inverse table-responsive">
+        <thead class="thead-inverse">
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+            </tr>
+        </thead>
+        <tbody id="producto"></tbody>
+    </table>
 
-    <aside class="listaenvio">
-        <table  class="table table-striped table-inverse table-responsive">
-            <thead class="thead-inverse">
-                <tr>
-                    <th>producto</th>
-                    <th>precio</th>
-                    <th>cantidad</th>
-                </tr>
-            </thead>
-            
-            <tbody id="producto">
-            </tbody>
-           
-        </table>
-        <br>
-        <table class="table table-striped table-inverse table-responsive">
-            <thead class="thead-inverse">
-                <tr>
-                    <th>total sin envio</th>
-                    <th id = "total productos">cantidad</th>
-                </tr>
-            </thead>
+    <br>
+    <table class="table table-striped table-inverse table-responsive">
+        <thead class="thead-inverse">
+            <tr>
+                <th>Total sin envío</th>
+                <th id="total_productos">Cantidad</th>
+            </tr>
+        </thead>
+        <thead class="thead-inverse">
+            <tr>
+                <th>Total envío</th>
+                <th id="total_envio">Cantidad</th>
+            </tr>
+        </thead>
+        <thead>
+            <tr>
+                <th>Total más envío</th>
+                <th id="total">Cantidad</th>
+            </tr>
+        </thead>
+    </table>
+</aside>
 
-            <thead class="thead-inverse">
-                <tr>
-                    <th>total envio</th>
-                    <th id = "total envio">cantidad</th>
-                </tr>
-            </thead>
-            <thead>
-                <tr>
-                    <th>total mas envio</th>
-                    <th id = "total">cantidad</th>
-                </tr>
-            </thead>
-        </table>
-
-    </aside>
-
-    
-
-    <script src="js/crearenvio.js"></script>
-     
-    <script src="js/verenvio.js"></script>
+<script src="js/crearenvio.js"></script>
+<script src="js/verenvio.js"></script>
 </body>
 </html>
