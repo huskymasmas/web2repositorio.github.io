@@ -11817,6 +11817,15 @@ body {
   color:black;
   text-align: left;
   background-color: whitesmoke;
+  .carrito-section {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  }
 }
 .contenedor{
 
@@ -11903,7 +11912,7 @@ aside{
 }
 .btn-primary:hover {
   background-color: #0056b3;
-  
+
 }
 .listaenvio{
   text-align: left;
