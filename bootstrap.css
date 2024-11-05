@@ -11886,6 +11886,30 @@ aside{
     border-radius: 8px;
     overflow: hidden;
 }
+.table-bordered {
+  border: 1px solid #dee2e6;
+}
+
+.table-header {
+  background-color: #4a90e2;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.table th, .table td {
+  padding: 1rem;
+  vertical-align: middle;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.table th {
+  font-weight: bold;
+}
+
+.total-descuento {
+  margin-top: 1.5rem;
+}
 
 
 .totalydescuento{
