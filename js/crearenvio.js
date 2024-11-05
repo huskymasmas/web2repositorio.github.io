@@ -2,6 +2,7 @@
 var precioenvio  = 10;
 var  costoenvio = document.getElementById("total envio");
 
+
 costoenvio.innerHTML = precioenvio + "$";
 function entrega(){
  
@@ -49,6 +50,7 @@ function calculartotala(precioen){
 
 
 function ralisarorden(){
+
 
    var notificaciones = document.getElementById("notificaciones");
    var mesajenoti = "no resivira notificaciones";
