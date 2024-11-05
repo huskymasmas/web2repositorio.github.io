@@ -11910,7 +11910,38 @@ aside{
 .total-descuento {
   margin-top: 1.5rem;
 }
+.total-descuento th, .total-descuento td {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  font-size: 1.1rem;
+  color: #333;
+  border: 1px solid #dee2e6;
+}
 
+.total-descuento th {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.total-descuento td {
+  text-align: right;
+}
+
+.btn-primary {
+  background-color: #4a90e2;
+  border-color: #4a90e2;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary:hover {
+  background-color: #357abd;
+}
 
 .totalydescuento{
   text-align: left;
@@ -11919,18 +11950,7 @@ aside{
   margin-left:  35.375em;
   margin-top: 2rem;
 }
-.btn-primary {
-  background-color:#007bff;
-  border-color: #007bff;
-  color: #fff;
-  padding: 0.5rem 1.5rem;
-  transition: background-color 0.3 ease;
 
-}
-.btn-primary:hover {
-  background-color: #0056b3;
-
-}
 .listaenvio{
   text-align: left;
   margin: 5em auto;
