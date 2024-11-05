@@ -11872,8 +11872,11 @@ aside{
 
 .tables{
   margin: 150px auto;
-  width: 600px;
-  border 1px solid #dee2e6;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #dee2e6;
     text-align: left;
     background-color: #007bff;
     color: #fff;
@@ -11886,7 +11889,7 @@ aside{
 .totalydescuento{
   text-align: left;
   width: 30.5em;
-  background-color: whitesmoke;
+  background-color: #f1f3f5;
   margin-left:  35.375em;
   margin-top: 2rem;
 }
